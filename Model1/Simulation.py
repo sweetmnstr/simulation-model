@@ -1,11 +1,13 @@
 import csv
-from Server import Server
-from RandomGenerator import RandomGenerator
-from Job import Job
-from LIFOQueue import LIFOQueue
+from .Server import Server
+from .RandomGenerator import RandomGenerator
+from .Job import Job
+from .LIFOQueue import LIFOQueue
 
 
 class Simulation:
+    __FILE_PATH = "../observations/simulation_results.csv"
+
     def __init__(self):
         self.current_time = 0
         self.modeling_time = 500
@@ -96,7 +98,7 @@ class Simulation:
         print(f"Max. of all jobs in queue (MoE2): {MoE2}")
 
         # Output the process table to a CSV file
-        with open("./simulation_results.csv", "w", newline="") as csvfile:
+        with open(self.__FILE_PATH, "w", newline="") as csvfile:
             fieldnames = [
                 "Event #",
                 "Current Time",

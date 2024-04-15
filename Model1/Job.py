@@ -1,4 +1,4 @@
-from RandomGenerator import RandomGenerator
+from .RandomGenerator import RandomGenerator
 
 
 class Job:

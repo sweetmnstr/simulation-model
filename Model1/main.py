@@ -1,4 +1,4 @@
-from Simulation import Simulation
+from .Simulation import Simulation
 
 simulation = Simulation()
 simulation.run()

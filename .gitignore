@@ -1,3 +1,5 @@
 __pycache__
 testing.py
-simulation_results.csv
+
+#Mac OS
+.DS_Store
